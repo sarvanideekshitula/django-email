@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>
+            Mail
+        </title>
+    </head>
+    <body>
+        <form method="post" action="">
+            {% csrf_token %}
+            Name:<input name="name" type="text" placeholder="Name" required>
+            Email:<input name="email" type="email" placeholder="Email" required>
+            Comment:<input name="description" type="text" placeholder="comment" required>
+            <button type="submit">Mail</button>
+        </form>
+    </body>
+</html>
